@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv1"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Total Reddveries"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tv_Redd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="234,33"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="16sp"/>
+            ></LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv2"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/cardv1"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Active Cases"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tv_cases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="234,33"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv3"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/cardv2"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Total Recoveries"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tvRecov"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="234,33"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv5"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/cardv2"
+        android:layout_below="@id/cardv4"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="To Day Cases"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_dayCases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="234,33"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv6"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/cardv3"
+        android:layout_below="@id/cardv5"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Total Recoveries"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_ReccvrTod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="234,33"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv4"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/cardv1"
+
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Total Death"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_dearh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="234,33"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+ --------------------------------------------------------------------------------------------------------------------
+code java
+---------
+package com.example.covid19;
+
+import android.os.Bundle;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+public class MainActivity extends AppCompatActivity {
+TextView Redd,Recov,Death,cases,casesToday,RocrveToDay;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate ( savedInstanceState );
+        setContentView ( R.layout.activity_main );
+        Redd = (TextView) findViewById ( R.id.tv_Redd );
+        Recov = (TextView) findViewById ( R.id.tvRecov );
+        Death = (TextView) findViewById ( R.id.tv_dearh );
+        cases = (TextView) findViewById ( R.id.tv_cases );
+        casesToday = (TextView) findViewById ( R.id.tv_dayCases );
+        RocrveToDay = (TextView) findViewById ( R.id.tv_ReccvrTod );
+        RequestQueue requestQueue = Volley.newRequestQueue ( this );
+        String url = "https://disease.sh/v3/covid-19/all";
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
+                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+                      String contry="all";
+                      try {
+
+
+                          JSONArray jsonArray = response.getJSONArray ( contry );
+                          JSONObject jsonObject = jsonArray.getJSONObject ( jsonArray.length () - 1 );
+                          String Redds = jsonObject.getString ( "updated" );
+                          String Recovs = jsonObject.getString ( "recovered" );
+                          String Deaths = jsonObject.getString ( "deaths" );
+                          String casess = jsonObject.getString ( "cases" );
+                          String cassessTod = jsonObject.getString ( "todayCases" );
+                          String Rocretodays = jsonObject.getString ( "todayRecovered" );
+                          Redd.setText ( Redds );
+                          Recov.setText ( Recovs );
+                          Death.setText ( Deaths );
+                          cases.setText ( casess );
+                          casesToday.setText ( cassessTod );
+                          RocrveToDay.setText ( Rocretodays );
+
+
+                      }catch (JSONException e)
+                      {
+                          e.printStackTrace ();
+                      }
+                    }
+                }, new Response.ErrorListener() {
+
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // TODO: Handle error
+
+                    }
+                });
+        requestQueue.add(jsonObjectRequest);
+
+    }
+
+}
